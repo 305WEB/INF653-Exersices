@@ -34,7 +34,12 @@ $statement->closeCursor();
 
 <div id="list-wrapper">
 
+<?php if ($todoitems) : ?>
+
+<div id="list-items-wrap">
+
 <?php foreach ($todoitems as $todoitem) : ?>
+
 
 <ul class="flg-flex">
   
@@ -59,7 +64,16 @@ $statement->closeCursor();
 
 </ul>
 
+
 <?php endforeach; ?>
+
+
+</div>
+
+<?php else : ?>
+    <!-- Display a message if no courses exist -->
+    <p id="message">No to do list items exist yet.</p>
+<?php endif; ?>
 
 </div>
         <form id="Add_itemForm" action="add_todoitem.php" method="post">

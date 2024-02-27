@@ -118,6 +118,14 @@ ul.flg-flex li.item-4 {
 
 }
 
+#list-items-wrap {
+    margin-top: 76px;
+}
+
+#message {
+    margin: 7%;
+}
+
 /*	---------- MAX WIDTH 568 PX --------------*/
 /* @media all and (max-width: 568px) {
     ul.flg-flex li {
